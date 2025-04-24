@@ -1,0 +1,16 @@
+[package]
+name = "rust-chanpool"
+version = "0.1.0"
+edition = "2021"
+description = "Channel pooling for async jobs, managing reusable task workers with backpressure awareness"
+authors = ["Saeed Ghanbari <https://github.com/sgh370>"]
+license = "MIT"
+repository = "https://github.com/sgh370/rust-chanpool"
+
+[dependencies]
+tokio = { version = "1.36.0", features = ["full"] }
+futures = "0.3.30"
+thiserror = "1.0.56"
+tracing = "0.1.40"
+num_cpus = "1.16.0"
+fastrand = "2.0.1"
